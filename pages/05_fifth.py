@@ -1,5 +1,5 @@
 st.header("💖 두근두근 이름 궁합")
-    st.write("서로의 이름을 입력해서 매칭 점수를 확인해보세요!")
+st.write("서로의 이름을 입력해서 매칭 점수를 확인해보세요!")
 
     col1, col2 = st.columns(2)
     with col1:
