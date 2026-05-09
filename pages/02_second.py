@@ -103,14 +103,14 @@ html_code = """
         }
 
         function showResult() {
-            const elements = ["H","He","Li","Be","B","C","N","O","F","Ne","Na","Mg","Al","Si","P","S","Cl","Ar","K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Ge"];
+            const elements = ["수소","헬륨","리튬","베릴륨","붕소","탄소","질소","산소","플루오린","네온","나트륨","마그네슘","알루미늄","규소","인","황","염소","아르곤","칼륨","칼슘","스칸듐","티타늄","바나듐","크로뮴","망가니즈","철","코발트","니켈","구리","아연","갈륨","저마늄"];
             const idx = path.split('').reduce((a, b) => a + b.charCodeAt(0), 0) % 32;
             const res = elements[idx];
             document.getElementById('content').innerHTML = `
                 <p>당신의 원소 바이브</p>
                 <div class="symbol">${res}</div>
                 <h2>원소 번호 ${idx + 1}</h2>
-                <p style="line-height: 1.6; color: #555;">당신의 선택 패턴(${path})은 ${res}의 성질과 닮아있네요. 고유하고 특별한 에너지를 가졌습니다.</p>
+                <p style="line-height: 1.6; color: #555;">당신의 선택 패턴은 ${res}의 성질과 닮아있네요. 고유하고 특별한 에너지를 가졌습니다.</p>
                 <button class="btn" onclick="location.reload()">다시 하기</button>
             `;
         }
